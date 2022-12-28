@@ -4,22 +4,7 @@ class Rainwater {
         kadanes(numbers);
     }
     public static void kadanes(int numbers[]){
-        int l = numbers.length;/*int rh, lh, waterlevel, totalwater=0;
-        for(int i=1;i<l-1;i++){
-            rh=lh=numbers[i];
-            for(int j=i+1;j<l;j++){
-                if(lh<numbers[j])
-                    lh=numbers[j];
-            }
-            for(int j=i-1;j>=0;j--){
-                if(rh<numbers[j])
-                    rh=numbers[j];    
-            }
-            int level = Math.min (lh, rh);
-            waterlevel = level-numbers[i];
-            System.out.println(waterlevel);
-            totalwater+=waterlevel;
-        }System.out.println("Total water="+totalwater);*/
+        int l = numbers.length;
         int leftmax[]=new int[7];
         int rightmax[]=new int[7];
         leftmax[0]=numbers[0];
